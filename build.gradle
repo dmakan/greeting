@@ -37,8 +37,8 @@ dependencies {
 
 task(checkJava) {
 	doLast {
-		if(JavaVersion.current() != JavaVersion.VERSION_1_7){
-			throw new GradleException("This build must be run with java 7")
+		if(JavaVersion.current() != JavaVersion.VERSION_1_8){
+			throw new GradleException("This build must be run with java 8")
 		}
 	}
 }
